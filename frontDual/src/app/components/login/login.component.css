@@ -1,6 +1,6 @@
 #padre{
   width: auto;
-  height: 650px;
+  height: 860px;
 }
 #izquierdaBanner{
 
@@ -26,5 +26,8 @@
   background-color: #214659;
   border:none;
 }
-
+.centrarCaja{
+  position: relative;
+  left: 80% !important;
+}
 
