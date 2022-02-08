@@ -1,4 +1,37 @@
-<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light d-none d-md-block  ">
+<nav class="navbar navbar-light bg-light d-none d-md-block pe-4 ps-4 pt-4">
+
+
+  <div class="container-fluid">
+    <a class="navbar-brand">Navbar</a>
+    <form class="d-flex">
+
+     <div class=" me-5">
+        <a href="#" class="me-5 link-secondary">Ayuda</a>
+        <a href="#" class="me-5 link-secondary">Blog</a>
+        <a href="#" class="me-5 link-secondary">Contacto</a>
+      </div>
+      <div class="me-3">
+        <p>{{nombre}}</p>
+      </div>
+      <div class=" dropstart">
+        <button class="circulo dropdown-toggle:after {display:none}" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> <p class="mt-1 ">{{iniciales}}</p></button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Mi perfil</a></li>
+          <li><a class="dropdown-item" href="#">Configuracion</a></li>
+          <li><a class="dropdown-item" href="#">Cerrar sesion</a></li>
+        </ul>
+
+      </div>
+
+    </form>
+  </div>
+
+</nav>
+
+
+
+
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light d-none d-md-block pe-4 ps-4 ">
 
 
   <div class="collapse navbar-collapse" >
@@ -160,19 +193,29 @@
 
       <li class="nav-item col mx-auto">
         <a class="nav-link text-center" [routerLink]="['cita']" routerLinkActive="activo" #cinco="routerLinkActive">
-
           <svg *ngIf="cinco.isActive" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus-fill" viewBox="0 0 16 16">
             <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM8.5 8.5V10H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V11H6a.5.5 0 0 1 0-1h1.5V8.5a.5.5 0 0 1 1 0z"/>
           </svg>
-
-
           <svg *ngIf="!cinco.isActive" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
             <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
             <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
           </svg>
           </a>
       </li>
+      <li class="nav-item col mx-auto">
+        <a class="nav-link text-center" [routerLink]="['login']" routerLinkActive="activo" #seis="routerLinkActive">
 
+          <svg *ngIf="seis.isActive" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+          </svg>
+
+
+          <svg *ngIf="!seis.isActive" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"/>
+          </svg>
+          </a>
+
+      </li>
 
     </ul>
 

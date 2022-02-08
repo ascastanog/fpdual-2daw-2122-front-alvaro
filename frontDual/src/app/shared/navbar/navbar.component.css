@@ -4,3 +4,35 @@
   border-color: black;
   border-width: 3px;
 }
+
+.circulo{
+  background-color: #67A9CCCC;
+  border-style: hidden;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px ;
+text-align: center;
+
+
+}
+a{
+  text-decoration: none;
+}
+button{
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  background-opacity:0% ;
+}
+.dropdown-toggle::after {
+  border:none;
+}
+.caret-off::before {
+  display: none;
+}
+.caret-off::after {
+  display: none;
+}
+.dropstart{
+  z-index: 1400;
+}
