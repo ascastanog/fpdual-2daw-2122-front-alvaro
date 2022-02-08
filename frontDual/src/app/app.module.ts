@@ -12,6 +12,7 @@ import { SaludComponent } from './components/salud/salud.component';
 import { InformacionComponent } from './components/informacion/informacion.component';
 import {LoginComponent} from "./components/login/login.component";
 import { PasswordPipe } from './pipes/password.pipe';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PasswordPipe } from './pipes/password.pipe';
     SaludComponent,
     InformacionComponent,
     LoginComponent,
-    PasswordPipe
+    PasswordPipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
