@@ -5,3 +5,29 @@
   padding: 0px;
   background-color: #214659;
 }
+.col{
+  height: 200px;
+  background-color: aquamarine;
+  margin: 5px;
+}
+#col1{
+
+
+}
+#col2{
+
+}
+#col3{
+background-color: #00425c;
+  color: whitesmoke;
+}
+
+#col4{
+  background-color:#7aa7d9;
+}
+#col5{
+  background-color: #c8c8c8;
+}
+#col6{
+  background-color:#fab633 ;
+}
