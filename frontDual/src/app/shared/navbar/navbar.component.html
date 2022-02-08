@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light ">
-  <div class="container-fluid">
+<nav class="navbar navbar-expand-lg sticky-top navbar-light bg-light d-none d-md-block  ">
+
 
   <div class="collapse navbar-collapse" >
     <div class="container-fluid">
@@ -93,7 +93,7 @@
 
 </div>
   </div>
-  </div>
+
 
 
 </nav>
@@ -103,10 +103,11 @@
 
 
 
-<nav class="navbar navbar-expand fixed-bottom navbar-light bg-light d-block d-lg-none">
-  <div class="container-fluid">
-    <ul class="navbar-nav">
-      <li class="nav-item col-md-2">
+          <nav class="navbar navbar-expand  fixed-bottom navbar-light bg-light d-block d-lg-none">
+
+
+    <ul class="navbar-nav mx-auto container-fluid">
+      <li class="nav-item col">
         <a class="nav-link text-center" aria-current="page" [routerLink]="['home']" routerLinkActive="activo" #one="routerLinkActive">
 
           <svg *ngIf="one.isActive" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door-fill" viewBox="0 0 16 16">
@@ -118,7 +119,7 @@
           </a>
       </li>
 
-      <li class="nav-item col-md-2" >
+      <li class="nav-item col mx-auto" >
         <a class="nav-link text-center" [routerLink]="['informacion']" routerLinkActive="activo" #two="routerLinkActive">
 
           <svg *ngIf="two.isActive" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 16 16">
@@ -131,7 +132,7 @@
         </a>
       </li>
 
-      <li class="nav-item  col-md-2 ">
+      <li class="nav-item col  mx-auto ">
         <a class="nav-link text-center" [routerLink]="['salud']" routerLinkActive="activo"  #tres="routerLinkActive">
 
           <svg *ngIf="tres.isActive" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart-pulse-fill" viewBox="0 0 16 16">
@@ -143,7 +144,7 @@
           </svg>
         </a>
       </li>
-      <li class="nav-item col-md-2 ">
+      <li class="nav-item col mx-auto ">
         <a class="nav-link text-center" [routerLink]="['prevencion']" routerLinkActive="activo" #cuatro="routerLinkActive">
 
           <svg *ngIf="cuatro.isActive" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-fill" viewBox="0 0 16 16">
@@ -157,7 +158,7 @@
           </a>
       </li>
 
-      <li class="nav-item col-md-2 ">
+      <li class="nav-item col mx-auto">
         <a class="nav-link text-center" [routerLink]="['cita']" routerLinkActive="activo" #cinco="routerLinkActive">
 
           <svg *ngIf="cinco.isActive" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus-fill" viewBox="0 0 16 16">
@@ -175,5 +176,5 @@
 
     </ul>
 
-  </div>
+
 </nav>
