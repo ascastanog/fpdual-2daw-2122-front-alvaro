@@ -6,16 +6,21 @@
   background-color: #214659;
 }
 .col{
-  height: 200px;
+  height: 300px;
   background-color: aquamarine;
   margin: 5px;
 }
 #col1{
 
 
+
+background-image: linear-gradient(0deg, rgba(20,134,203,1) 0%, rgba(103,169,204,0.8) 100%), url("src/utils/images/pexels-karolina-grabowska-4021769.jpg");
+  background-size: cover;
 }
 #col2{
 
+  background-image: linear-gradient(0deg, rgba(255,153,0,0.6) 0%, rgba(255,153,0,1) 100%),url("src/utils/images/pexels-chevanon-photography-1108101.jpg");
+  background-size: cover;
 }
 #col3{
 background-color: #00425c;
@@ -30,4 +35,7 @@ background-color: #00425c;
 }
 #col6{
   background-color:#fab633 ;
+}
+#ts{
+  height: 100px;
 }
