@@ -1,2 +1,37 @@
-<p>analiticas works!</p>
+<div class="d-flex ">
 <app-sidebar> </app-sidebar>
+
+
+  <div  class=" flex-column align-self-center centro">
+    <h1> Analiticas</h1>
+    <div *ngFor="let analitica of analiticas;" class="card flex-column align-self-center centro mb-3" style="width: 800px;">
+      <div class="d-flex">
+        <div class="card-body justify-content-start ">
+          <div class="float-start bg-warning fondo me-5 p-3" >
+            <svg style="color:white" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+            </svg>
+          </div>
+
+          <h3 class="card-title mt-3 ms-3 fs-4 fw-bold">{{analitica.fecha}}</h3>
+          <h6 class="card-subtitle  ms-5 mb-4 mt-1 text-muted">{{analitica.referencia}}</h6>
+          <h6 class="fw-bold ms-5">Observaciones</h6>
+          <p class="card-text ms-5 me-5 fs-5 ">{{analitica.observaciones}}</p>
+          <hr class=" ms-5 hi ">
+          <h6 class="card-subtitle  ms-5 mb-2 mt-3 text-muted">{{analitica.empresa}}</h6>
+          <p class="card-text ms-5 fs-5 "> {{analitica.lugar}}</p>
+          <hr class="mb-5">
+
+
+
+        </div>
+
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+

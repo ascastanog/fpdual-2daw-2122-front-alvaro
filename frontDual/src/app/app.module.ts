@@ -8,7 +8,6 @@ import { HomeComponent } from './components/home/home.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
 import { CitaComponent } from './components/cita/cita.component';
 import { PrevencionComponent } from './components/prevencion/prevencion.component';
-import { SaludComponent } from './components/salud/salud.component';
 import { InformacionComponent } from './components/informacion/informacion.component';
 import {LoginComponent} from "./components/login/login.component";
 import { PasswordPipe } from './pipes/password.pipe';
@@ -26,7 +25,7 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
     PerfilComponent,
     CitaComponent,
     PrevencionComponent,
-    SaludComponent,
+
     InformacionComponent,
     LoginComponent,
     PasswordPipe,

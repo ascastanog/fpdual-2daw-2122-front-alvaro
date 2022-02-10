@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomeComponent} from "./components/home/home.component";
 import {InformacionComponent} from "./components/informacion/informacion.component";
-import {SaludComponent} from "./components/salud/salud.component";
+
 import {PrevencionComponent} from "./components/prevencion/prevencion.component";
 import {CitaComponent} from "./components/cita/cita.component";
 import {PerfilComponent} from "./components/perfil/perfil.component";
