@@ -8,7 +8,7 @@
 }
 #col1{
 
-background-image: linear-gradient(0deg, rgba(20,134,203,1) 0%, rgba(103,169,204,0.8) 100%), url("src/utils/images/pexels-karolina-grabowska-4021769.jpg");
+background-image: linear-gradient(0deg, rgba(20,134,203,1) 0%, rgba(103,169,204,0.8) 100%), url("src/assets/pexels-karolina-grabowska-4021769.jpg");
   background-size: cover;
   color: whitesmoke;
 }

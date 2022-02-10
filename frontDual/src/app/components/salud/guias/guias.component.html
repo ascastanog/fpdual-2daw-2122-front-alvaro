@@ -1,2 +1,38 @@
-<p>guias works!</p>
+<div class="d-flex">
 <app-sidebar></app-sidebar>
+<div class="w-50 h-50">
+  <div class="row row-cols-1  row-cols-md-3 g-4 m-2">
+
+
+
+    <div *ngFor="let guia of guias; let i = index" class="col card-group tarjeta  ">
+      <div class="card">
+        <img src="{{guia.src}}" class="card-img-top imagen" alt="...">
+        <div class="card-body fondo ">
+          <h5 class="card-title ">{{guia.titulo}}</h5>
+          <div class="">
+            <span  *ngFor="let campo of guia.campos" class="badge border bg-transparent bg-primary m-2 p-2">{{campo}}</span>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+  </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+

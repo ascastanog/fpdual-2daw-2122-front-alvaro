@@ -1,0 +1,13 @@
+.fondo{
+  background: rgb(0,66,92);
+  background: linear-gradient(220deg, rgba(0,66,92,1) 50%, rgba(67,114,132,1) 52%);
+  color: whitesmoke;
+
+}
+.imagen{
+  height: 200px;
+}
+.tarjeta{
+min-width: 300px;
+
+}
