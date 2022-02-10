@@ -16,6 +16,7 @@ import { AnaliticasComponent } from './components/salud/analiticas/analiticas.co
 import { GuiasComponent } from './components/salud/guias/guias.component';
 import { ReconocimientosComponent } from './components/salud/reconocimientos/reconocimientos.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { SidebarComponent } from './shared/sidebar/sidebar.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

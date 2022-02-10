@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {MovilService} from "./service/movil.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'frontDual';
+
+  constructor(private movil:MovilService) {
+    this.movil.observar();
+  }
+
 }

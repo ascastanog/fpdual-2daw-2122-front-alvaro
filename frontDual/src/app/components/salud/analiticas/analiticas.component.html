@@ -2,9 +2,9 @@
 <app-sidebar> </app-sidebar>
 
 
-  <div  class=" flex-column align-self-center centro">
+  <div  class=" flex-column align-self-center centro" [ngClass]="{'w-100':service.ismobile}">
     <h1> Analiticas</h1>
-    <div *ngFor="let analitica of analiticas;" class="card flex-column align-self-center centro mb-3" style="width: 800px;">
+    <div *ngFor="let analitica of analiticas;" class="card flex-column align-self-center centro mb-3" style="width: 800px;"  >
       <div class="d-flex">
         <div class="card-body justify-content-start ">
           <div class="float-start bg-warning fondo me-5 p-3" >

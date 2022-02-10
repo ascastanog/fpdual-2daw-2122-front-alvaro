@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MovilService} from "../../../service/movil.service";
 
 @Component({
   selector: 'app-analiticas',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AnaliticasComponent implements OnInit {
 
-  constructor() { }
+  constructor(public service: MovilService) { }
 
   ngOnInit(): void {
   }

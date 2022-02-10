@@ -1,4 +1,4 @@
-<div class="d-flex navbar-expand-lg d-lg-block ">
+<div class="d-flex navbar-expand-lg d-lg-block  " *ngIf="!service.ismobile">
   <div class="d-flex ms-5 container-fluid me-5 flex-column flex-shrink-0 p-3 bg-light  " style="width: 330px;">
 
 
@@ -31,6 +31,24 @@
 
     </ul>
 
+  </div>
+
+</div>
+
+
+<div *ngIf="service.ismobile">
+
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a routerLink="/salud/analiticas" class="dropdown-item" routerLinkActive="activo" #analiticas="routerLinkActive" [ngClass]="{'activo':analiticas.isActive}" >Analiticas</a></li>
+      <li><a routerLink="/salud/guias" class="dropdown-item" routerLinkActive="activo" #guias="routerLinkActive" [ngClass]="{'activo':guias.isActive}" >Guias saludables</a></li>
+      <li><a routerLink="/salud/reconocimientos"  class="dropdown-item" routerLinkActive="activo" #salud="routerLinkActive" [ngClass]="{'activo':salud.isActive}">Reconocimientos medicos</a></li>
+    </ul>
   </div>
 
 </div>
