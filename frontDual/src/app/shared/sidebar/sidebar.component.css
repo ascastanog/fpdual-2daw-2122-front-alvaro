@@ -1,0 +1,9 @@
+.tamano{
+  min-width: 400px;
+}
+.activo{
+
+  border-left-style: solid;
+  border-color: #ffc107;
+  border-width: 3px;
+}

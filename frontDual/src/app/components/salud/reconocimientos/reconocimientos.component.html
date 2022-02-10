@@ -1,0 +1,65 @@
+
+
+
+<div class="d-flex ">
+
+  <app-sidebar></app-sidebar>
+
+
+  <div  class=" flex-column align-self-center centro">
+    <h1> Reconocimientos medicos</h1>
+    <div *ngFor="let reconocimiento of reconocimientos;" class="card flex-column align-self-center centro mb-3" style="width: 800px;">
+      <div class="d-flex">
+        <div class="card-body justify-content-start ">
+          <div class="float-start bg-warning fondo me-5 p-3" >
+            <svg style="color:white" xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-activity" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M6 2a.5.5 0 0 1 .47.33L10 12.036l1.53-4.208A.5.5 0 0 1 12 7.5h3.5a.5.5 0 0 1 0 1h-3.15l-1.88 5.17a.5.5 0 0 1-.94 0L6 3.964 4.47 8.171A.5.5 0 0 1 4 8.5H.5a.5.5 0 0 1 0-1h3.15l1.88-5.17A.5.5 0 0 1 6 2Z"/>
+            </svg>
+          </div>
+
+          <h5 class="card-title mt-3 ms-3 fs-4 fw-bold">{{reconocimiento.fecha}}</h5>
+          <h6 class="card-subtitle  ms-5 mb-1 mt-5 text-muted">puesto de trabajo</h6>
+          <p class="card-text ms-5 fs-5 fw-bold">{{reconocimiento.puesto}}</p>
+
+          <h6 class="card-subtitle  ms-5 mb-2 mt-3 text-muted">Motivo</h6>
+          <p class="card-text ms-5 fs-5 "> {{reconocimiento.motivo}}</p>
+
+          <h6 class="card-subtitle  ms-5 mb-2 mt-3 text-muted">Protocolos</h6>
+
+
+          <a *ngFor="let protocolo of reconocimiento.protocolos; let i = index" href="#" class="badge badge-light color ms-4 me-4 ps-3 pe-3">{{protocolo}}</a>
+
+
+
+        </div>
+
+        <div class="justify-content-end me-5 p-5">
+
+
+          <div class="tarjeta  m-1 p-2 pb-5 ">
+            <span class="badge float-end badge-success  ms-4 me-4 ps-3 pe-3" >galleta</span>
+            <h6 class="card-subtitle  ms-3  mt-3 mb-2 me-3 text-muted">proximo reconocimiento</h6>
+            <p class="card-text ms-5  ">{{reconocimiento.proximoReconocimiento}}</p>
+            <h6 class="card-subtitle  ms-3 mb-2 mt-3 text-muted">Periodicidad</h6>
+            <p class="card-text ms-5  ">{{reconocimiento.periodicidad}}</p>
+          </div>
+
+
+        </div>
+      </div>
+      <hr class="mb-5">
+    </div>
+
+  </div>
+
+  <div class="d-flex justify-content-end" style="width: 450px;" >
+
+  </div>
+
+</div>
+
+
+
+
+
+

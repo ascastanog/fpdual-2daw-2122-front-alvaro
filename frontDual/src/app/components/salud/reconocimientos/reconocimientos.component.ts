@@ -1,26 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-salud',
-  templateUrl: './salud.component.html',
-  styleUrls: ['./salud.component.css']
+  selector: 'app-reconocimientos',
+  templateUrl: './reconocimientos.component.html',
+  styleUrls: ['./reconocimientos.component.css']
 })
-export class SaludComponent implements OnInit {
+export class ReconocimientosComponent implements OnInit {
 
-
-
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
   }
-reconocimiento:Reconocimiento= new Reconocimiento("24 de marzo", "Tecnico de procesos", "reconocimiento periodico",
-  ["asma","ruidos","cargas"], "21 de marzo de 2023", "Bianual");
+  reconocimiento:Reconocimiento= new Reconocimiento("24 de marzo", "Tecnico de procesos", "reconocimiento periodico",
+    ["asma","ruidos","cargas"], "21 de marzo de 2023", "Bianual");
   reconocimiento2:Reconocimiento=new Reconocimiento("24 de marzo", "Tecnico de procesos", "reconocimiento periodico",
     ["asma","ruidos","cargas"], "21 de marzo de 2023", "Bianual");
   reconocimientos:Reconocimiento[]= [this.reconocimiento, this.reconocimiento2];
 
 }
-class Reconocimiento{
+  class Reconocimiento{
   fecha:string;
   puesto:string;
   motivo:string;

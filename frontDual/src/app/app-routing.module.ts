@@ -7,15 +7,21 @@ import {PrevencionComponent} from "./components/prevencion/prevencion.component"
 import {CitaComponent} from "./components/cita/cita.component";
 import {PerfilComponent} from "./components/perfil/perfil.component";
 import {LoginComponent} from "./components/login/login.component";
+import {AnaliticasComponent} from "./components/salud/analiticas/analiticas.component";
+import {GuiasComponent} from "./components/salud/guias/guias.component";
+import {ReconocimientosComponent} from "./components/salud/reconocimientos/reconocimientos.component";
 
 const routes: Routes = [
   {path: 'home', component:HomeComponent},
   {path: 'login', component: LoginComponent},
   {path: 'informacion', component:InformacionComponent},
-  {path: 'salud', component:SaludComponent},
+  {path: 'salud/reconocimientos', component:ReconocimientosComponent},
   {path: 'prevencion', component:PrevencionComponent},
   {path: 'cita', component:CitaComponent},
   {path: 'perfil', component:PerfilComponent},
+  {path: 'salud/analiticas', component:AnaliticasComponent},
+  {path: 'salud/guias', component:GuiasComponent},
+
 
 
   { path: '**', pathMatch: 'full', redirectTo: 'home' }

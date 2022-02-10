@@ -13,6 +13,10 @@ import { InformacionComponent } from './components/informacion/informacion.compo
 import {LoginComponent} from "./components/login/login.component";
 import { PasswordPipe } from './pipes/password.pipe';
 import { FooterComponent } from './shared/footer/footer.component';
+import { AnaliticasComponent } from './components/salud/analiticas/analiticas.component';
+import { GuiasComponent } from './components/salud/guias/guias.component';
+import { ReconocimientosComponent } from './components/salud/reconocimientos/reconocimientos.component';
+import { SidebarComponent } from './shared/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +30,11 @@ import { FooterComponent } from './shared/footer/footer.component';
     InformacionComponent,
     LoginComponent,
     PasswordPipe,
-    FooterComponent
+    FooterComponent,
+    AnaliticasComponent,
+    GuiasComponent,
+    ReconocimientosComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
