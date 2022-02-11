@@ -1,4 +1,177 @@
-
-
-
+<div class="d-flex justify-content-center" *ngIf="!service.ismobile" >
+<div class="ft table-responsive-lg">
 <p>perfil works!</p>
+
+<table class="table table-borderless">
+  <tr>
+    <td>Nombre</td>
+    <td> {{nombre}}</td>
+  </tr>
+  <tr>
+    <td>Apellidos</td>
+    <td> {{apellido1}} {{apellido2}}</td>
+  </tr>
+  <tr>
+    <td>DNI</td>
+    <td>{{dni}}</td>
+  </tr>
+  <tr>
+    <td>Fecha de nacimiento</td>
+    <td>{{fechaNacimiento}}</td>
+
+  </tr>
+  <tr>
+    <td>Idioma</td>
+    <td><select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+      <option selected>Español</option>
+      <option value="1">Catalán</option>
+      <option value="2">Gallego</option>
+      <option value="3">Euskera</option>
+    </select>
+    </td>
+  </tr>
+<tr>
+  <td colspan="2" class="text-center fw-5"><h1>Contacto</h1></td>
+</tr>
+  <tr>
+    <td>Telefono móvil</td>
+    <td><input type="text" value="{{telefono}}"></td>
+  </tr>
+  <tr>
+    <td>email</td>
+    <td><input type="text" value="{{email}}"></td>
+  </tr>
+  <tr>
+    <td>Provincia</td>
+    <td><input type="text" value="{{provincia}}"></td>
+  </tr>
+  <tr>
+    <td>Localidad</td>
+    <td><input type="text" value="{{localidad}}"></td>
+  </tr>
+  <tr>
+    <td>Direccion</td>
+    <td><input type="text" value="{{direccion}}"></td>
+  </tr>
+  <tr>
+    <td>CP</td>
+    <td><input type="text" value="{{cp}}"></td>
+  </tr>
+</table>
+
+</div>
+</div>
+
+<div *ngIf="service.ismobile">
+
+  <div class="d-flex justify-content-between m-3 ">
+    <h2>Mi perfil</h2>
+
+
+
+    <div class="dropdown">
+      <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filter-right float-end" viewBox="0 0 16 16">
+          <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="d-flex bs-3">
+    <button [routerLink]="['/']" class="bs-5" routerLinkActive="activo" #perfil="routerLinkActive" [ngClass]="{'activo':perfil.isActive}">Mi perfil</button>
+  </div>
+  <hr>
+  <div class="card">
+    <div class="card-header">
+      <h1>{{nombre}}</h1>
+      <h1>{{apellido1}} {{apellido2}}</h1>
+      <div class="d-flex justify-content-between">
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-postcard" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z"/>
+          </svg>
+          {{dni}}
+        </div>
+        <div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-balloon-fill" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8.48 10.901C11.211 10.227 13 7.837 13 5A5 5 0 0 0 3 5c0 2.837 1.789 5.227 4.52 5.901l-.244.487a.25.25 0 1 0 .448.224l.04-.08c.009.17.024.315.051.45.068.344.208.622.448 1.102l.013.028c.212.422.182.85.05 1.246-.135.402-.366.751-.534 1.003a.25.25 0 0 0 .416.278l.004-.007c.166-.248.431-.646.588-1.115.16-.479.212-1.051-.076-1.629-.258-.515-.365-.732-.419-1.004a2.376 2.376 0 0 1-.037-.289l.008.017a.25.25 0 1 0 .448-.224l-.244-.487ZM4.352 3.356a4.004 4.004 0 0 1 3.15-2.325C7.774.997 8 1.224 8 1.5c0 .276-.226.496-.498.542-.95.162-1.749.78-2.173 1.617a.595.595 0 0 1-.52.341c-.346 0-.599-.329-.457-.644Z"/>
+          </svg>
+          {{fechaNacimiento}}
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3 class="text-muted">Idioma</h3>
+      <div>
+      <select class="form-select form-select-sm mb-3" aria-label=".form-select-sm example">
+        <option selected>Español</option>
+        <option value="1">Catalán</option>
+        <option value="2">Gallego</option>
+        <option value="3">Euskera</option>
+      </select>
+      </div>
+      <h3 class="text-muted">Telefono movil</h3>
+      <input type="text" value="{{telefono}}">
+      <h3 class="text-muted">email</h3>
+      <input type="text" value="{{email}}">
+      <h3 class="text-muted">Provincia</h3>
+      <input type="text" value="{{provincia}}">
+      <h3 class="text-muted">Localidad</h3>
+      <input type="text" value="{{localidad}}">
+      <h3 class="text-muted">Direccion</h3>
+      <input type="text" value="{{direccion}}">
+      <h3 class="text-muted">CP</h3>
+      <input type="text" value="{{cp}}">
+
+
+    </div>
+  </div>
+
+ </div>
+
+
+
+  <!--
+<div class="d-flex justify-content-between m-5 ">
+  <h2>Mi perfil</h2>
+
+
+
+  <div class="dropdown">
+   <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filter-right float-end" viewBox="0 0 16 16">
+      <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"/>
+    </svg>
+   </button>
+    <div class="dropdown-menu d-flex" aria-labelledby="dropdownMenuButton1">
+      <a routerLink="/" class="dropdown-item" routerLinkActive="activo" #perfil="routerLinkActive" [ngClass]="{'activo':perfil.isActive}" >Mi perfil</a>
+    </div>
+  </div>
+</div>
+
+
+
+</div>
+
+
+-->
+
+
+<!--
+<div *ngIf="service.ismobile">
+
+  <div class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+      </svg>
+    </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+      <li><a routerLink="/salud/analiticas" class="dropdown-item" routerLinkActive="activo" #analiticas="routerLinkActive" [ngClass]="{'activo':analiticas.isActive}" >Analiticas</a></li>
+      <li><a routerLink="/salud/guias" class="dropdown-item" routerLinkActive="activo" #guias="routerLinkActive" [ngClass]="{'activo':guias.isActive}" >Guias saludables</a></li>
+      <li><a routerLink="/salud/reconocimientos"  class="dropdown-item" routerLinkActive="activo" #salud="routerLinkActive" [ngClass]="{'activo':salud.isActive}">Reconocimientos medicos</a></li>
+    </ul>
+  </div>
+
+</div>-->

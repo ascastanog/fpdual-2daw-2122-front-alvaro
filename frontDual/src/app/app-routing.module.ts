@@ -21,6 +21,7 @@ const routes: Routes = [
   {path: 'perfil', component:PerfilComponent},
   {path: 'salud/analiticas', component:AnaliticasComponent},
   {path: 'salud/guias', component:GuiasComponent},
+  {path: 'perfil', component:PerfilComponent},
 
 
 

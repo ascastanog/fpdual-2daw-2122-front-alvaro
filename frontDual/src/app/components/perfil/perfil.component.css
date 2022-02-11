@@ -1,0 +1,17 @@
+.ft{
+width: 1200px;
+min-width: 1200px;
+}
+td{
+  padding-bottom: 20px;
+
+}
+.activo{
+  background-color: white;
+  color: #ff9900;
+  border:none;
+
+  border-bottom: solid;
+border-bottom: #ff9900;
+}
+
