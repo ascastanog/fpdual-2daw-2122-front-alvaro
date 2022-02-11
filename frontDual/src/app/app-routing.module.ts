@@ -10,6 +10,7 @@ import {LoginComponent} from "./components/login/login.component";
 import {AnaliticasComponent} from "./components/salud/analiticas/analiticas.component";
 import {GuiasComponent} from "./components/salud/guias/guias.component";
 import {ReconocimientosComponent} from "./components/salud/reconocimientos/reconocimientos.component";
+import {ContactoComponent} from "./components/contacto/contacto.component";
 
 const routes: Routes = [
   {path: 'home', component:HomeComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path: 'salud/analiticas', component:AnaliticasComponent},
   {path: 'salud/guias', component:GuiasComponent},
   {path: 'perfil', component:PerfilComponent},
+  {path:'contacto', component:ContactoComponent},
 
 
 

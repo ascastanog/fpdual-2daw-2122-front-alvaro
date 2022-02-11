@@ -24,7 +24,7 @@ guia1:Guia= new Guia( "./assets/pexels-karolina-grabowska-4021769.jpg", "Trabajo
 
   guia6:Guia= new Guia( "./assets/pexels-darya-gryazeva-11072353.jpg", "Problemas venosos en piernas", ["Espalda", "Teletrabajo"]);
 
-  guia7:Guia= new Guia( "./assets/pexels-sora-shimazaki-5938558.jpg", "Trabajo con manipulacion de cargas", ["Espalda", "Teletrabajo"]);
+  guia7:Guia= new Guia( "./assets/pexels-sora-shimazaki-5938558.jpg", "Trabajo con manipulación de cargas", ["Espalda", "Teletrabajo"]);
 
   guias:Guia[]=[this.guia1, this.guia2, this.guia3, this.guia4, this.guia5, this.guia6, this.guia7 ];
 }

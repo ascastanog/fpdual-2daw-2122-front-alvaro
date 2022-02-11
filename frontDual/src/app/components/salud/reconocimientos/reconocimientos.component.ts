@@ -12,9 +12,9 @@ export class ReconocimientosComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  reconocimiento:Reconocimiento= new Reconocimiento("24 de marzo", "Tecnico de procesos", "reconocimiento periodico",
+  reconocimiento:Reconocimiento= new Reconocimiento("24 de marzo", "Técnico de procesos", "Reconocimiento periódico",
     ["asma","ruidos","cargas"], "21 de marzo de 2023", "Bianual");
-  reconocimiento2:Reconocimiento=new Reconocimiento("24 de marzo", "Tecnico de procesos", "reconocimiento periodico",
+  reconocimiento2:Reconocimiento=new Reconocimiento("24 de marzo", "Técnico de procesos", "Reconocimiento periódico",
     ["asma","ruidos","cargas"], "21 de marzo de 2023", "Bianual");
   reconocimientos:Reconocimiento[]= [this.reconocimiento, this.reconocimiento2];
 

@@ -9,9 +9,18 @@ td{
 .activo{
   background-color: white;
   color: #ff9900;
-  border:none;
-
+  border-top:none;
+  border-left: none;
+  border-right: none;
   border-bottom: solid;
+  border-width: 3px;
 border-bottom: #ff9900;
+}
+button{
+  color: black;
+}
+text-muted{
+  border-top: 20px;
+  border-bottom: 20px;
 }
 

@@ -8,13 +8,13 @@ import {RouterLink, RouterLinkActive} from "@angular/router";
 })
 export class NavbarComponent implements OnInit {
 
-  nombre:string="Alvaro Castano";
+  nombre:string="Álvaro Castaño";
   iniciales:string=this.inicialesCap(this.nombre);
   constructor() {
   }
 
   ngOnInit(): void {
-    console.log(this.iniciales)
+
   }
 
 // @ts-ignore

@@ -69,6 +69,7 @@
 
 
 
+
     <div class="dropdown">
       <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filter-right float-end" viewBox="0 0 16 16">
@@ -77,10 +78,17 @@
       </button>
     </div>
   </div>
-
-  <div class="d-flex bs-3">
-    <button [routerLink]="['/']" class="bs-5" routerLinkActive="activo" #perfil="routerLinkActive" [ngClass]="{'activo':perfil.isActive}">Mi perfil</button>
+<div class="d-flex">
+  <div class="d-flex bs-3 ">
+    <button [routerLink]="['/']" class="bs-5 fw-bold" routerLinkActive="activo" #perfil="routerLinkActive" [ngClass]="{'activo':perfil.isActive}">Mi perfil</button>
   </div>
+  <div class="d-flex bs-3">
+    <button [routerLink]="['/']" class="bs-5" routerLinkActive="activo" #configuracion="routerLinkActive" [ngClass]="{'activo':configuracion.isActive}">Configuración</button>
+  </div>
+  <div class="d-flex bs-3">
+    <button [routerLink]="['/']" class="bs-5" routerLinkActive="activo" #sesion="routerLinkActive" [ngClass]="{'activo':sesion.isActive}">Cerrar sesión</button>
+  </div>
+</div>
   <hr>
   <div class="card">
     <div class="card-header">
@@ -111,7 +119,7 @@
         <option value="3">Euskera</option>
       </select>
       </div>
-      <h3 class="text-muted">Telefono movil</h3>
+      <h3 class="text-muted">Teléfono movil</h3>
       <input type="text" value="{{telefono}}">
       <h3 class="text-muted">email</h3>
       <input type="text" value="{{email}}">
@@ -119,11 +127,13 @@
       <input type="text" value="{{provincia}}">
       <h3 class="text-muted">Localidad</h3>
       <input type="text" value="{{localidad}}">
-      <h3 class="text-muted">Direccion</h3>
+      <h3 class="text-muted">Dirección</h3>
       <input type="text" value="{{direccion}}">
       <h3 class="text-muted">CP</h3>
       <input type="text" value="{{cp}}">
-
+<HR>
+      <HR>
+      <HR>
 
     </div>
   </div>
@@ -132,46 +142,4 @@
 
 
 
-  <!--
-<div class="d-flex justify-content-between m-5 ">
-  <h2>Mi perfil</h2>
 
-
-
-  <div class="dropdown">
-   <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-filter-right float-end" viewBox="0 0 16 16">
-      <path d="M14 10.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-7a.5.5 0 0 0 0 1h7a.5.5 0 0 0 .5-.5zm0-3a.5.5 0 0 0-.5-.5h-11a.5.5 0 0 0 0 1h11a.5.5 0 0 0 .5-.5z"/>
-    </svg>
-   </button>
-    <div class="dropdown-menu d-flex" aria-labelledby="dropdownMenuButton1">
-      <a routerLink="/" class="dropdown-item" routerLinkActive="activo" #perfil="routerLinkActive" [ngClass]="{'activo':perfil.isActive}" >Mi perfil</a>
-    </div>
-  </div>
-</div>
-
-
-
-</div>
-
-
--->
-
-
-<!--
-<div *ngIf="service.ismobile">
-
-  <div class="dropdown">
-    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-justify" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M2 12.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
-      </svg>
-    </button>
-    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-      <li><a routerLink="/salud/analiticas" class="dropdown-item" routerLinkActive="activo" #analiticas="routerLinkActive" [ngClass]="{'activo':analiticas.isActive}" >Analiticas</a></li>
-      <li><a routerLink="/salud/guias" class="dropdown-item" routerLinkActive="activo" #guias="routerLinkActive" [ngClass]="{'activo':guias.isActive}" >Guias saludables</a></li>
-      <li><a routerLink="/salud/reconocimientos"  class="dropdown-item" routerLinkActive="activo" #salud="routerLinkActive" [ngClass]="{'activo':salud.isActive}">Reconocimientos medicos</a></li>
-    </ul>
-  </div>
-
-</div>-->

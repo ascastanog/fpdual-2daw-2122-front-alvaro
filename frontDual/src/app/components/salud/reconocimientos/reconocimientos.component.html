@@ -4,7 +4,7 @@
   <app-sidebar></app-sidebar>
 
   <div  class=" flex-column align-self-center centro">
-    <h1> Reconocimientos medicos</h1>
+    <h1> Reconocimientos médicos</h1>
     <div *ngFor="let reconocimiento of reconocimientos;" class="card flex-column align-self-center centro mb-3" style="width: 800px;">
       <div class="d-flex">
         <div class="card-body justify-content-start ">
@@ -34,8 +34,8 @@
 
 
           <div class="tarjeta  m-1 p-2 pb-5 ">
-            <span class="badge float-end badge-success  ms-4 me-4 ps-3 pe-3" >galleta</span>
-            <h6 class="card-subtitle  ms-3  mt-3 mb-2 me-3 text-muted">proximo reconocimiento</h6>
+            <span class="badge float-end badge-success  ms-4 me-4 ps-3 pe-3" >activo</span>
+            <h6 class="card-subtitle  ms-3  mt-3 mb-2 me-3 text-muted">Próximo reconocimiento</h6>
             <p class="card-text ms-5  ">{{reconocimiento.proximoReconocimiento}}</p>
             <h6 class="card-subtitle  ms-3 mb-2 mt-3 text-muted">Periodicidad</h6>
             <p class="card-text ms-5  ">{{reconocimiento.periodicidad}}</p>

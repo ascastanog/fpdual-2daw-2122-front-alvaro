@@ -17,6 +17,11 @@ import { GuiasComponent } from './components/salud/guias/guias.component';
 import { ReconocimientosComponent } from './components/salud/reconocimientos/reconocimientos.component';
 import { SidebarComponent } from './shared/sidebar/sidebar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContactoComponent } from './components/contacto/contacto.component';
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { MatSnackBarModule} from "@angular/material/snack-bar";
+import {MatFormFieldModule} from "@angular/material/form-field";
+
 
 @NgModule({
   declarations: [
@@ -34,12 +39,19 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AnaliticasComponent,
     GuiasComponent,
     ReconocimientosComponent,
-    SidebarComponent
+    SidebarComponent,
+    ContactoComponent,
+
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSnackBarModule,
+    MatFormFieldModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

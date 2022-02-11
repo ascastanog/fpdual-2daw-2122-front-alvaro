@@ -1,0 +1,44 @@
+<div class="d-flex justify-content-center">
+  <h1 class="text-align-center mt-5">Ponte en contacto con nosotros</h1>
+</div>
+
+<div class="d-flex justify-content-center">
+  <h6 class="text-align-center text-muted">Nos interesa tu opinion. Si tienes cualquier duda, puedes ponerte en contacto con nosotros a traves de este formulario.</h6>
+</div>
+<hr>
+<div class="d-flex justify-content-center tamano">
+  <form  class="tamano2" [formGroup]="formulario" (ngSubmit)="guardar(formulario)">
+    <div class="mb-3">
+      <label for="exampleFormControlInput1" class="form-label"  >Correo electrónico</label>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" [class.is-invalid]="!validar('email')" formControlName="email"  >
+      <small *ngIf="!validar('email')"
+             class="form-text text-danger">
+        Debe ser un correo válido.
+      </small>
+    </div>
+
+    <label for="motivo" class="form-label">Seleccione el motivo.</label>
+    <select class="form-select form-select-m mb-3 form-control" id="motivo"  [class.is-invalid]="!validar('motivo')" formControlName="motivo" aria-label=".form-select-sm example">
+
+      <option value="1">Presupuesto</option>
+      <option value="2">Vigilancia de la salud</option>
+      <option value="3">Cita</option>
+    </select>
+    <small *ngIf="!validar('motivo')"
+           class="form-text text-danger">
+      Debe seleccionar un motivo.
+    </small>
+
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Díganos su opinión.</label>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" ></textarea>
+    </div>
+    <div class="d-grid gap-2 col-6 mx-auto">
+      <button class="btn btn-primary color"  type="submit">Enviar </button>
+
+    </div>
+  </form>
+
+
+</div>
+
